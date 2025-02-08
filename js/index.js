@@ -1,15 +1,10 @@
-const title = document.querySelector('.title')
-const text = 'I Have Something For You'.split('')
-for (let index = 0; index < text.length; index++) {
-  if (text[index] !== ' ') {
-    title.innerHTML += `<span>${text[index]}<span/>`
-  } else {
-    title.innerHTML += `<span style='margin-right: 20px;'><span/>`
-  }
-}
+const title = document.querySelector('.title');
+const text = ['I', 'Have', 'Something', 'For', 'You'];
+
+title.innerHTML = text.map(word => `<span>${word}</span>`).join(' '); // Une las palabras con un espacio
 
 const textElements = document.querySelectorAll('.title span');
 textElements.forEach((element) => {
-  const randomDelay = Math.random() * 3; // Menghasilkan delay acak antara 0 hingga 3 detik
+  const randomDelay = Math.random() * 3; // Genera un delay aleatorio entre 0 y 3 segundos
   element.style.animationDelay = `${randomDelay}s`;
 });
