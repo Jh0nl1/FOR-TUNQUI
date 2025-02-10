@@ -1,11 +1,10 @@
 const title = document.querySelector('.title');
-const text = ['I', 'Have', 'Something', 'For', 'You'];
+const text = 'I Have Something For You'.split(' ');
 
-// Usamos spans y añadimos un pequeño espacio después de cada palabra
-title.innerHTML = text.map(word => `<span class="word">${word}</span>`).join(' ');
+title.innerHTML = text.map(word => `<span>${word}</span>`).join(' '); // Une palabras con espacio
 
 const textElements = document.querySelectorAll('.title span');
 textElements.forEach((element, index) => {
-  const randomDelay = Math.random() * 3; // Genera un delay aleatorio entre 0 y 3 segundos
+  const randomDelay = Math.random() * 3;
   element.style.animationDelay = `${randomDelay}s`;
 });
