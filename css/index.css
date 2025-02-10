@@ -23,41 +23,48 @@
 
 .title {
   position: absolute;
-  top: 50%; /* Asegura que el texto esté centrado verticalmente */
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
   font-family: 'Courier New', Courier, monospace;
   
   display: flex;
-  flex-wrap: wrap; /* Permite que el texto se mantenga en una línea */
+  flex-wrap: wrap;
   justify-content: center;
+  align-content: center;
   align-items: center;
-  
+
   width: 100%;
+  height: auto;
   text-shadow: 0 0 20px white;
+  font-size: 2rem; /* Ajustamos tamaño de fuente */
   letter-spacing: 3px;
-  white-space: nowrap; /* Evita que se divida el texto */
+  word-spacing: 10px; /* Asegura que haya espacios adecuados entre palabras */
+  text-align: center;
 }
 
-@media (min-width: 500px) {
-  .title {
-    letter-spacing: 20px; /* Aumenta la separación en pantallas más grandes */
-  }
+/* Asegura que cada palabra tenga espacio correcto */
+.word {
+  display: inline-block;
+  margin: 0 5px; /* Separa las palabras */
+  white-space: nowrap;
 }
 
-
+/* Mejora la animación de aparición */
 @keyframes typing {
   from {
     opacity: 0;
+    transform: translateY(10px);
   }
 
   to {
     opacity: 1;
+    transform: translateY(0);
   }
 }
 
-/* Terapkan animasi dengan delay */
+/* Aplica la animación con delays */
 .title span {
   opacity: 0;
   animation: typing 1s ease forwards;
