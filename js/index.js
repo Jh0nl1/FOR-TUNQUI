@@ -1,7 +1,8 @@
 const title = document.querySelector('.title');
 const text = ['I', 'Have', 'Something', 'For', 'You'];
 
-title.innerHTML = text.map(word => `<span>${word}</span>`).join(' '); // Une las palabras con un espacio
+// Usa un span con `white-space: pre;` para mantener los espacios entre palabras
+title.innerHTML = text.map(word => `<span style="white-space: pre;">${word} </span>`).join('');
 
 const textElements = document.querySelectorAll('.title span');
 textElements.forEach((element) => {
