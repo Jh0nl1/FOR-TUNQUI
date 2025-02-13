@@ -23,12 +23,12 @@
 
 .title {
   position: absolute;
-  top: 35%; /* Ajustado para mejorar la posición */
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
   font-family: 'Courier New', Courier, monospace;
-  
+
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -38,11 +38,10 @@
   width: 100%;
   height: auto;
   text-shadow: 0 0 20px white;
-  font-size: 3vw; /* Ajustamos tamaño de fuente */
-  letter-spacing: 2px;
-  word-spacing: 5px;
+  font-size: 2rem; /* Ajustamos tamaño de fuente */
+  letter-spacing: 3px;
+  word-spacing: 10px; /* Asegura que haya espacios adecuados entre palabras */
   text-align: center;
-  white-space: nowrap; /* Evita que las palabras se dividan */
 }
 
 /* Asegura que cada palabra tenga espacio correcto */
