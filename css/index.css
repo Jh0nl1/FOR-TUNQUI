@@ -23,7 +23,7 @@
 
 .title {
   position: absolute;
-  top: 30%; /* Ajuste para que el texto no se superponga con las flores */
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
@@ -32,36 +32,17 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-content: center;
   align-items: center;
 
-  width: 90%; /* Reducir el ancho para que no desborde */
+  width: 100%;
   height: auto;
-  text-shadow: 0 0 10px white;
-
-  font-size: 4vw; /* Hace que el texto sea adaptable */
-  letter-spacing: 2px;
-  word-spacing: 8px; /* Mantiene separación */
-  text-align: center;
-  max-width: 80%; /* Evita que se salga de la pantalla */
-}
-
-/* Ajuste para pantallas pequeñas */
-@media (max-width: 768px) {
-  .title {
-    font-size: 6vw; /* Hace que el texto sea más pequeño en celulares */
-    top: 25%;
-  }
-}
-
-
-/* Ajuste del título solo en flower.html */
-.flower-page .title {
-  font-size: 2.5vw;  /* Reduce más el tamaño del texto */
-  top: 20%;  /* Eleva el texto para que no tape las flores */
-  max-width: 80%; /* Evita que se extienda demasiado */
+  text-shadow: 0 0 20px white;
+  font-size: 2rem; /* Ajustamos tamaño de fuente */
+  letter-spacing: 3px;
+  word-spacing: 10px; /* Asegura que haya espacios adecuados entre palabras */
   text-align: center;
 }
-
 
 /* Asegura que cada palabra tenga espacio correcto */
 .word {
