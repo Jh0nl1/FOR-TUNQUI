@@ -23,37 +23,29 @@
 
 .title {
   position: absolute;
-  top: 35%; /* Ajustado para mejorar la posición */
+  top: 50%; /* Asegura que el texto esté centrado verticalmente */
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
   font-family: 'Courier New', Courier, monospace;
   
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* Permite que el texto se mantenga en una línea */
   justify-content: center;
-  align-content: center;
   align-items: center;
-
+  
   width: 100%;
-  height: auto;
   text-shadow: 0 0 20px white;
-  font-size: 3vw; /* Ajustamos tamaño de fuente */
-  letter-spacing: 2px;
-  word-spacing: 5px;
-  text-align: center;
-  white-space: nowrap; /* Evita que las palabras se dividan */
+  letter-spacing: 3px;
+  white-space: nowrap; /* Evita que se divida el texto */
 }
 
-/* Ajuste para dispositivos móviles */
-@media (max-width: 768px) {
+@media (min-width: 500px) {
   .title {
-    font-size: 5vw; /* Ajuste dinámico */
-    top: 30%;
-    word-spacing: 2px;
-    letter-spacing: 1px;
+    letter-spacing: 20px; /* Aumenta la separación en pantallas más grandes */
   }
 }
+
 
 /* Asegura que cada palabra tenga espacio correcto */
 .word {
