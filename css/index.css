@@ -38,7 +38,7 @@
   width: 100%;
   height: auto;
   text-shadow: 0 0 20px white;
-  font-size: 2rem; /* Ajustamos tamaño de fuente */
+  font-size: 4vw; /* Ajustamos tamaño de fuente */
   letter-spacing: 3px;
   word-spacing: 10px; /* Asegura que haya espacios adecuados entre palabras */
   text-align: center;
