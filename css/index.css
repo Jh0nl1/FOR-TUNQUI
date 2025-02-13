@@ -23,7 +23,7 @@
 
 .title {
   position: absolute;
-  top: 50%;
+  top: 35%; /* Ajustado para mejorar la posición */
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
@@ -38,10 +38,21 @@
   width: 100%;
   height: auto;
   text-shadow: 0 0 20px white;
-  font-size: 4vw; /* Ajustamos tamaño de fuente */
-  letter-spacing: 3px;
-  word-spacing: 10px; /* Asegura que haya espacios adecuados entre palabras */
+  font-size: 3vw; /* Ajustamos tamaño de fuente */
+  letter-spacing: 2px;
+  word-spacing: 5px;
   text-align: center;
+  white-space: nowrap; /* Evita que las palabras se dividan */
+}
+
+/* Ajuste para dispositivos móviles */
+@media (max-width: 768px) {
+  .title {
+    font-size: 5vw; /* Ajuste dinámico */
+    top: 30%;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+  }
 }
 
 /* Asegura que cada palabra tenga espacio correcto */
