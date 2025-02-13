@@ -3,7 +3,7 @@ onload = () => {
     document.body.classList.remove("not-loaded");
 
     // Texto con salto de línea
-    const titles = "HAPPY BIRTHDAY, HONEY!<br><span id='small-text'>Miss Tunqui</span>";  
+    const titles = "HAPPY BIRTHDAY, HONEY!<br><span id='small-text'>TUNQUI</span>";  
     const titleElement = document.getElementById('title');
     let index = 0;
 
