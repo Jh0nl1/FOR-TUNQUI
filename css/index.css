@@ -44,13 +44,14 @@
   text-align: center;
 }
 
-/* Ajuste del título en flower.html */
+/* Ajuste del título solo en flower.html */
 .flower-page .title {
-  font-size: 3vw;  /* Reduce el tamaño en flower.html */
-  top: 30%;        /* Eleva el texto para que no tape las flores */
-  max-width: 800px; /* Evita que el texto se ensanche demasiado */
-  width: 90%;
+  font-size: 2.5vw;  /* Reduce más el tamaño del texto */
+  top: 20%;  /* Eleva el texto para que no tape las flores */
+  max-width: 80%; /* Evita que se extienda demasiado */
+  text-align: center;
 }
+
 
 /* Asegura que cada palabra tenga espacio correcto */
 .word {
